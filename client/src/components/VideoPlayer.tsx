@@ -4,8 +4,7 @@ import { useSocket } from "../contexts/SoketContext";
 interface VideoPlayerProps {}
 
 const VideoPlayer: React.FC<VideoPlayerProps> = () => {
-    const { call, name, stream, myVideo, userVideo, callEnded, callAccepted } =
-        useSocket();
+    const { call, name, myVideo, userVideo } = useSocket();
 
     return (
         <div className="flex justify-between items-start w-full h-[500px] gap-5 my-4">
