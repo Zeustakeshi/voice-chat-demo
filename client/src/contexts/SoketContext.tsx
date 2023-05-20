@@ -109,6 +109,7 @@ const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
 
         peer.on("stream", (stream) => {
             if (userVideo.current) userVideo.current.srcObject = stream;
+            if (userAudio.current) userAudio.current.srcObject = stream;
         });
 
         socket.on("callacceped", (signal) => {
