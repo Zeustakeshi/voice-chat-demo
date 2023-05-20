@@ -1,7 +1,6 @@
 import Audio from "./components/Audio";
 import Notifications from "./components/Notifications";
 import Options from "./components/Options";
-import VideoPlayer from "./components/VideoPlayer";
 import { SocketProvider } from "./contexts/SoketContext";
 
 // import React from "react";
